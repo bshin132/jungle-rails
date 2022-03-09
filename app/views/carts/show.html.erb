@@ -1,3 +1,12 @@
+<% if enhanced_cart.count == 0 %>
+<div class="alert alert-warning text-center" role="alert">
+  <b>
+    Your cart is empty! Click <%= link_to 'here', :root %> to return to the homepage.
+  </b>
+  </div>
+<% end %>
+
+<% if enhanced_cart.count > 0 %>
 <section class="cart-show">
 
   <header class="page-header">
@@ -50,3 +59,4 @@
   </div>
 
 </section>
+<% end %>

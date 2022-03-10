@@ -1,0 +1,22 @@
+<table class="order-table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Image</th>
+      <th scope="col">Product</th>
+      <th scope="col">Description</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+     <% @line_items.each do |item| %>
+    <tr>
+      <td><img class="order-img"src=<%= item.product.image %>/> </td>
+      <td><%= item.product.name %></td>
+      <td><%= item.product.description %></td>
+      <td><%= item.product.quantity %></td>
+      <td><%= humanized_money_with_symbol item.product.price %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

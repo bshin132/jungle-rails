@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   resources :products, only: [:index, :show]
   resources :categories, only: [:show]
 
+  get "about", to: "about#show"
+
   resource :cart, only: [:show] do
     post   :add_item
     post   :remove_item

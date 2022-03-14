@@ -73,4 +73,19 @@ main section.products-show {
   }
 }
 
+.sold-out-badge {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  background-color: #FAB;
+  border-radius: 4px 0 20px 0px;
+  font-size: 0.8em;
+  color: #FFF;
+  font-weight: bold;
+}
 
+.order-img {
+  max-height: 100px;
+  max-width: 100px;
+}

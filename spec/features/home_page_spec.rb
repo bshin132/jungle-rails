@@ -28,5 +28,4 @@ RSpec.feature "Visitor navigates to home page", type: :feature, js: true do
     expect(page).to have_css 'article.product', count: 10
 
   end
-
 end

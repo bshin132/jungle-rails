@@ -8,7 +8,11 @@
     <h4>Thank you for your order!</h4>
     <%= render :partial => 'line_item', :object => @line_items %>
     <h4>Order Total : <%= humanized_money_with_symbol @order.total_cents / 100 %></h4>
-    <h4>Confirmation has been sent to: <%= @order.email %></h4>
+    <h4>        
+      <% if current_user %> 
+        Confirmation has been sent to:<%= current_user.email %>
+      <% end %>
+    </h4>
   </div>
 
   <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>

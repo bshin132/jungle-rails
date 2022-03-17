@@ -47,13 +47,13 @@
             <%= fa_icon "shopping-cart" %> My Cart (<%= cart.size %>)
           <% end %>
         </li>
-        <div class="d-flex flex-row justify-content-center align-items-center">
+        <li class="flex">
           <% if current_user %>
             Signed in as <%= current_user.email %> | <%= link_to "Logout", '/logout' %>
           <% else %>
             <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
           <% end %>
-        </div>
+        </li>
       </ul>
     </div>
   </div>

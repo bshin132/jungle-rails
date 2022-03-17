@@ -35,6 +35,6 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Stripe
 
 ## Screenshots
-![Product Page]
-![Cart Page]
-![Admin_Dashboard Page]
+![Product Page](https://github.com/bshin132/jungle-rails/blob/master/docs/Product.png?raw=true)
+![Cart Page](https://github.com/bshin132/jungle-rails/blob/master/docs/Cart.png?raw=true)
+![Admin_Dashboard Page](https://github.com/bshin132/jungle-rails/blob/master/docs/Admin_Dashboard.png?raw=true)
